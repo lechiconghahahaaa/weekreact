@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+import Tablecomponent from './Tablecomponent';
+import './cong.json'
+import Formcomponent from './Formcomponent';
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function Root(){
+  return(<body>
+    <div>
+        <h2 class="wrap" >THÊM SỬA XÓA VỚI HTML + CSS + JS</h2>  
+      <Tablecomponent></Tablecomponent>
+      <Formcomponent></Formcomponent>
+</div>
+      </body>
+  )
+}
+root.render(<Root/>);
